@@ -3471,7 +3471,7 @@ The first 4 bytes are the MDEC(1) command, the "ID" is always 3800h (equivalent
 to selecting 16bpp output; for 24bpp this must be changed to 3000h before
 passing the command to the MDEC hardware). The remaining bytes are MDEC data
 (padded to 80h-byte boundary).<br/>
-[Macroblock Decoder (MDEC)](macroblockdecodermdec.md)<br/>
+[Macroblock Decoder (MDEC)](../cpu/mdec/macroblockdecodermdec.md)<br/>
 
 
 
@@ -4125,7 +4125,7 @@ Version=00000003h and up)?<br/>
 #### VAG ADPCM Data
 The ADPCM data uses PSX SPU-ADPCM encoding (even on PS2 and up, except PS4 with
 Version=0002001h or Version=00030000h, which do use HEVAG encoding).<br/>
-[SPU ADPCM Samples](soundprocessingunitspu.md#spu-adpcm-samples)<br/>
+[SPU ADPCM Samples](../spu/soundprocessingunitspu.md#spu-adpcm-samples)<br/>
 The data does usually start at offset 0030h (except, some files have extra
 header data or padding at that location).<br/>
 The first 10h-byte ADPCM block is usually all zero (used to initialize the

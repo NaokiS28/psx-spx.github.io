@@ -227,7 +227,7 @@ IBLKSZ (bits 8-9) controls the i-cache refill burst length. With the default
 value of 1 (4-word), a cache miss at word 0 fills the entire 4-word line. With
 IBLKSZ=0 (2-word), a miss at word 0 fills only words 0 and 1. Misses at words
 1, 2, or 3 always fill from the accessed word to end-of-line regardless of
-IBLKSZ. See the [i-Cache](memorymap.md#i-cache) section for details on fill
+IBLKSZ. See the [i-Cache](../memorymap.md#i-cache) section for details on fill
 behavior and per-word valid bits.<br/>
 When TAG is set and IsC is set in COP0 SR, stores to the cache address space
 write to the i-cache tag memory. The stored value is:

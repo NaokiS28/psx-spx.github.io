@@ -40,8 +40,8 @@ Thus the GPU can be seen as a blackbox that executes 32 bits commands.<br/>
 
 #### GPU Timers / Synchronization
 Most of the Timers are bound to GPU timings, see<br/>
-[Timers](timers.md)<br/>
-[Interrupts](interrupts.md)<br/>
+[Timers](../cpu/timers.md)<br/>
+[Interrupts](../cpu/interrupts.md)<br/>
 
 #### GPU-related DMA Channels (DMA2 and DMA6)
 ```
@@ -1340,7 +1340,7 @@ The PSone/PAL video clock is the cpu clock multiplied by 11/7.<br/>
   Video Clock =  53.222400MHz (44100Hz*300h*11/7)
 ```
 For other PSX/PSone PAL/NTSC variants, see:<br/>
-[Pinouts - CLK Pinouts](pinouts.md#pinouts-clk-pinouts)<br/>
+[Pinouts - CLK Pinouts](../pinouts.md#pinouts-clk-pinouts)<br/>
 
 #### Vertical Timings
 ```

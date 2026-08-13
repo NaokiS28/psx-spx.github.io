@@ -7,7 +7,7 @@ disc (whole movies usually being stored on two CDs). VCDs are popular in asia
 For the Playstation, the asian SCPH-5903 model includes a special daughterboard
 with MPEG decoding hardware for playing VCDs.<br/>
 [CDROM - Video CD Commands](cdromdrive.md#cdrom-video-cd-commands)<br/>
-[Pinouts - VCD Pinouts](pinouts.md#pinouts-vcd-pinouts)<br/>
+[Pinouts - VCD Pinouts](../pinouts.md#pinouts-vcd-pinouts)<br/>
 Without that hardware it has been widely believed to be impossible to play VCDs
 on Playstations, although, as of 2017, it turned out that the Playstation's CPU
 and MDEC decoder are fast enough for that purpose (when skipping B-frames,

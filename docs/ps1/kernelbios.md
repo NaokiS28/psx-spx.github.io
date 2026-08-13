@@ -838,7 +838,7 @@ being reserved for loading executables).<br/>
 
 #### Note
 For more info about EXE files and their headers, see<br/>
-[CDROM File Formats](cdromfileformats.md)<br/>
+[CDROM File Formats](cdr/cdromfileformats.md)<br/>
 
 
 
@@ -947,7 +947,7 @@ InitCARD2(pad\_enable), then StartCARD2(), and then \_bu\_init().<br/>
 #### File Header, Filesize, and Sector Alignment
 The first 100h..200h bytes (2..4 sectors) of the file must contain the title
 and icon bitmap(s). For details, see:<br/>
-[Memory Card Data Format](controllersandmemorycards.md#memory-card-data-format)<br/>
+[Memory Card Data Format](sio/controllersandmemorycards.md#memory-card-data-format)<br/>
 The filesize must be a multiple of 2000h bytes (one block), the maximum size
 would be 1E000h bytes (when using all 15 blocks on the memory card). The
 filesize must be specified when creating the file (ie. accessmode bit9=1, and
@@ -1601,7 +1601,7 @@ Joypads should be initialized via InitPAD2(buf1,22h,buf2,22h), and StartPAD2().
 The main program can read the pad data from the buf1/buf2 addresses (including
 Status, ID1, button states, and any kind of analogue inputs). For more info on
 ID1, Buttons and analogue inputs, see<br/>
-[Controllers and Memory Cards](controllersandmemorycards.md)<br/>
+[Controllers and Memory Cards](sio/controllersandmemorycards.md)<br/>
 Note: The BIOS doesn't include any functions for sending custom data to the
 pads (such like for controlling rumble motors).<br/>
 
@@ -2495,7 +2495,7 @@ by:<br/>
 ```
 with that patch, the BIOS bootcode (and many games) are sending debug messages
 to the debug terminal, via expansion port, see:<br/>
-[EXP2 Dual Serial Port (for TTY Debug Terminal)](expansionportpio.md#exp2-dual-serial-port-for-tty-debug-terminal)<br/>
+[EXP2 Dual Serial Port (for TTY Debug Terminal)](pio/expansionportpio.md#exp2-dual-serial-port-for-tty-debug-terminal)<br/>
 Note: The nocash BIOS automatically detects the DUART hardware, and activates
 TTY if it is present.<br/>
 

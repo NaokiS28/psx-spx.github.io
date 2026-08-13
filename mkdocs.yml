@@ -25,6 +25,8 @@ theme:
         name: Switch to light mode
   icon:
     logo: material/sony-playstation
+  features:
+    - navigation.path
 
 hooks:
   - tools/bitfields/hook.py
@@ -48,36 +50,50 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - index.md
-  - memorymap.md
-  - iomap.md
-  - graphicsprocessingunitgpu.md
-  - geometrytransformationenginegte.md
-  - gtepipelinetimings.md
-  - macroblockdecodermdec.md
-  - soundprocessingunitspu.md
-  - interrupts.md
-  - dmachannels.md
-  - timers.md
-  - cdromdrive.md
-  - cdromformat.md
-  - cdromfileformats.md
-  - controllersandmemorycards.md
-  - pocketstation.md
-  - serialinterfacessio.md
-  - expansionportpio.md
-  - memorycontrol.md
-  - partialwordwrites.md
-  - unpredictablethings.md
-  - cpuspecifications.md
-  - kernelbios.md
-  - arcadecabinets.md
-  - konamisystem573.md
-  - cheatdevices.md
-  - psxdevboardchipsets.md
-  - psxdevboardprotocol.md
-  - hardwarenumbers.md
-  - pinouts.md
-  - aboutcredits.md
-  - cdromvideocdsvcd.md
-  - cdrominternalinfoonpsxcdromcontroller.md
+  - 'index.md'
+  - 'aboutcredits.md'
+  - Playsation 1:
+      - 'ps1/kernelbios.md'
+      - 'ps1/hardwarenumbers.md'
+      - 'ps1/memorymap.md'
+      - 'ps1/iomap.md'
+      - 'ps1/pinouts.md'
+      - CPU:
+          - GTE:
+              - 'ps1/cpu/gte/geometrytransformationenginegte.md'
+              - 'ps1/cpu/gte/gtepipelinetimings.md'
+          - MDEC:
+              - 'ps1/cpu/mdec/macroblockdecodermdec.md'
+          - 'ps1/cpu/memorycontrol.md'
+          - 'ps1/cpu/partialwordwrites.md'
+          - 'ps1/cpu/unpredictablethings.md'
+          - 'ps1/cpu/cpuspecifications.md'
+          - 'ps1/cpu/interrupts.md'
+          - 'ps1/cpu/dmachannels.md'
+          - 'ps1/cpu/timers.md'
+      - GPU:
+          - 'ps1/gpu/graphicsprocessingunitgpu.md'
+      - SPU:
+          - 'ps1/spu/soundprocessingunitspu.md'
+      - CD-ROM:
+          - 'ps1/cdr/cdromdrive.md'
+          - 'ps1/cdr/cdromformat.md'
+          - 'ps1/cdr/cdromfileformats.md'
+          - 'ps1/cdr/cdrominternalinfoonpsxcdromcontroller.md'
+          - 'ps1/cdr/cdromvideocdsvcd.md'
+      - SIO:
+          - 'ps1/sio/serialinterfacessio.md'
+          - 'ps1/sio/controllersandmemorycards.md'
+          - 'ps1/sio/pocketstation.md'
+      - PIO:
+          - 'ps1/pio/expansionportpio.md'
+          - 'ps1/pio/cheatdevices.md'
+  - Sony DTL-H2xxx:
+      - 'dtl/psxdevboardchipsets.md'
+      - 'dtl/psxdevboardprotocol.md'
+  - Arcade Boards:
+      - 'arcade/arcadecabinets.md'
+      - Konami:
+          - 'arcade/konami/konami-gq.md'
+          - 'arcade/konami/konami-gv999.md'
+          - 'arcade/konami/573/konamisystem573.md'

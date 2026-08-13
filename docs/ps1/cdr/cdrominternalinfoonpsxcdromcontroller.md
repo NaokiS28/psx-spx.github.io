@@ -58,8 +58,8 @@ The PSX can manipulate the CX(..) registers via some test commands:<br/>
 Note: Datasheets for CXD2510Q/CXA1782BR/CXD2545Q do exist.<br/>
 
 #### CDROM Pinouts
-[Pinouts - DRV Pinouts](pinouts.md#pinouts-drv-pinouts)<br/>
-[Pinouts - HC05 Pinouts](pinouts.md#pinouts-hc05-pinouts)<br/>
+[Pinouts - DRV Pinouts](../pinouts.md#pinouts-drv-pinouts)<br/>
+[Pinouts - HC05 Pinouts](../pinouts.md#pinouts-hc05-pinouts)<br/>
 
 
 
@@ -706,7 +706,7 @@ which are probably containing Motorola HC05 CPUs, too. Unknown if/how those
 chips can be switched into bootstrap/dumping modes.<br/>
 
 #### Pinouts
-[Pinouts - HC05 Pinouts](pinouts.md#pinouts-hc05-pinouts)<br/>
+[Pinouts - HC05 Pinouts](../pinouts.md#pinouts-hc05-pinouts)<br/>
 
 
 

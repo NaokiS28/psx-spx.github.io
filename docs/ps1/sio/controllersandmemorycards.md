@@ -33,7 +33,7 @@
 [Pocketstation](pocketstation.md)<br/>
 
 #### Pinouts
-[Pinouts - Controller Ports and Memory-Card Ports](pinouts.md#pinouts-controller-ports-and-memory-card-ports)<br/>
+[Pinouts - Controller Ports and Memory-Card Ports](../pinouts.md#pinouts-controller-ports-and-memory-card-ports)<br/>
 
 
 
@@ -104,7 +104,7 @@ sending the byte.<br/>
 
 #### BIOS Functions
 Controllers can be probably accessed via InitPad and StartPad functions,<br/>
-[BIOS Joypad Functions](kernelbios.md#bios-joypad-functions)<br/>
+[BIOS Joypad Functions](../kernelbios.md#bios-joypad-functions)<br/>
 Memory cards can be accessed by the filesystem (with device names "bu00:"
 (slot1) and "bu10:" (slot2) or so). Before using that device names, it seems to
 be required to call InitCard, StartCard, and \_bu\_init (?).<br/>
@@ -322,7 +322,7 @@ accepting switching commands with address 61h. Unknown if the PS2 multitap is
 backwards compatible with the SCPH-1070 protocol.<br/>
 
 #### See also
-[Pinouts - Component List and Chipset Pin-Outs for Multitap, SCPH-1070](pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-multitap-scph-1070)<br/>
+[Pinouts - Component List and Chipset Pin-Outs for Multitap, SCPH-1070](../pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-multitap-scph-1070)<br/>
 
 
 
@@ -498,10 +498,10 @@ confusing (that's probably why the LED=Green mode wasn't implemented on the
 Dual Shock).<br/>
 
 #### See also
-[Pinouts - Component List and Chipset Pin-Outs for Digital Joypad, SCPH-1080](pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-digital-joypad-scph-1080)<br/>
-[Pinouts - Component List and Chipset Pin-Outs for Analog Joypad, SCPH-1150](pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-analog-joypad-scph-1150)<br/>
-[Pinouts - Component List and Chipset Pin-Outs for Analog Joypad, SCPH-1200](pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-analog-joypad-scph-1200)<br/>
-[Pinouts - Component List and Chipset Pin-Outs for Analog Joypad, SCPH-110](pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-analog-joypad-scph-110)<br/>
+[Pinouts - Component List and Chipset Pin-Outs for Digital Joypad, SCPH-1080](../pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-digital-joypad-scph-1080)<br/>
+[Pinouts - Component List and Chipset Pin-Outs for Analog Joypad, SCPH-1150](../pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-analog-joypad-scph-1150)<br/>
+[Pinouts - Component List and Chipset Pin-Outs for Analog Joypad, SCPH-1200](../pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-analog-joypad-scph-1200)<br/>
+[Pinouts - Component List and Chipset Pin-Outs for Analog Joypad, SCPH-110](../pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-analog-joypad-scph-110)<br/>
 
 
 
@@ -1027,7 +1027,7 @@ X=X\*320/385).<br/>
 ```
 
 #### See also
-[Pinouts - Component List and Chipset Pin-Outs for Namco Lightgun, NPC-103](pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-namco-lightgun-npc-103)<br/>
+[Pinouts - Component List and Chipset Pin-Outs for Namco Lightgun, NPC-103](../pinouts.md#pinouts-component-list-and-chipset-pin-outs-for-namco-lightgun-npc-103)<br/>
 
 
 
@@ -1085,10 +1085,10 @@ should not block the bus for longer periods). In practice, most programmers
 probably don't realize how to do that, to the worst, Sony seems to have
 delivered a slightly bugged library (libgun) to developers.<br/>
 For details on Timers, see:<br/>
-[Timers](timers.md)<br/>
+[Timers](../cpu/timers.md)<br/>
 In some consoles, IRQ10 seems to be routed through a Secondary IRQ Controller,
 see:<br/>
-[EXP2 DTL-H2000 I/O Ports](expansionportpio.md#exp2-dtl-h2000-io-ports)<br/>
+[EXP2 DTL-H2000 I/O Ports](../pio/expansionportpio.md#exp2-dtl-h2000-io-ports)<br/>
 
 #### IRQ10 Priority
 For processing IRQ10 as soon as possible, it should be assigned higher priority
@@ -1099,7 +1099,7 @@ processed shortly before processing the priority chains (the resulting IRQ
 priority isn't actually higher as when using 1st element of chain 0; the main
 difference is that it skips some time consuming code which pushes registers
 R4..R30). For details on that patch, see:<br/>
-[BIOS Patches](kernelbios.md#bios-patches)<br/>
+[BIOS Patches](../kernelbios.md#bios-patches)<br/>
 Even if IRQ10 has highest priority, execution of (older) other IRQs may cause a
 new IRQ10 to be executed delayed (because IRQs are disabled during IRQ
 handling), to avoid that problem: Best don't enable any other IRQs except IRQ0
@@ -2596,7 +2596,7 @@ characters 20h..7Fh (so, in the 8bit form, the title could be theoretically up
 to 64 characters long, but, nethertheless, the BIOS displays only max 32
 chars).<br/>
 For displaying Titles, the BIOS includes a complete Shift-JIS character set,<br/>
-[BIOS Character Sets](kernelbios.md#bios-character-sets)<br/>
+[BIOS Character Sets](../kernelbios.md#bios-character-sets)<br/>
 Shift-JIS is focused on asian languages, and does NOT include european letters
 (eg. such with accent marks). Although the non-japanese PSX BIOSes DO include a
 european character set, the BIOS memory card manager DOESN'T seem to translate

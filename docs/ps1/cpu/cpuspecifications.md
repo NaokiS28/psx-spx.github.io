@@ -885,7 +885,7 @@ handler at 80000080h (not 80000040h).
 The debug registers are mis-used by "Legacy of Kain: Soul Reaver" (and maybe
 also other games) for storing libcrypt copy-protection related values (ie. just
 as a "hidden" location for storing data, not for actual debugging purposes).<br/>
-[CDROM Protection - LibCrypt](cdromformat.md#cdrom-protection-libcrypt)
+[CDROM Protection - LibCrypt](../cdr/cdromformat.md#cdrom-protection-libcrypt)
 
 #### Note (Cheat Devices/Expansion ROMs)
 The Expansion ROM header supports only Pre-Boot and Post-Boot vectors, but no

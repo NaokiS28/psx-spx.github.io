@@ -13,7 +13,7 @@ assuming that the BIOS is read-only).<br/>
 The BIOS initializes Expansion Region 1 to 512Kbyte with 8bit bus, and Region 2
 to 128 bytes with 8bit bus. However, the size and data bus-width of these
 regions can be changed, see:<br/>
-[Memory Control](memorycontrol.md)<br/>
+[Memory Control](../cpu/memorycontrol.md)<br/>
 For Region 1, 32bit reads are supported even in 8bit mode (eg. 32bit opcode
 fetches are automatically processed as four 8bit reads).<br/>
 For Region 2, only 8bit access seems to be supported (except that probably
@@ -336,9 +336,9 @@ Unknown if the Interrupt signal is connected to the PSX... there seems to be no
 spare IRQ for it, though it \<might\> share an IRQ with whatever other
 hardware...?<br/>
 The BIOS seems to use only one of the two channels; for the std\_io functions:<br/>
-[BIOS TTY Console (std_io)](kernelbios.md#bios-tty-console-std_io)<br/>
+[BIOS TTY Console (std_io)](../kernelbios.md#bios-tty-console-std_io)<br/>
 Aside from the external DUART, the PSX additionally contains an internal UART,<br/>
-[Serial Interfaces (SIO)](serialinterfacessio.md)<br/>
+[Serial Interfaces (SIO)](../sio/serialinterfacessio.md)<br/>
 The DTL-H2000 devboard uses a non-serial "ATCONS" channel for TTY stuff,<br/>
 [EXP2 DTL-H2000 I/O Ports](expansionportpio.md#exp2-dtl-h2000-io-ports)<br/>
 
@@ -362,7 +362,7 @@ There are two parallel data channels: an 8bit channel at 1F802002h (status bits
 3/4) and a 16bit channel at 1F802004h (status bits 0/2). The console TTY uses the
 8bit channel; the DECI debug protocol uses the 8bit channel for the connect
 handshake and result codes, and the 16bit channel for command and bulk data
-words (see [DTL-H2000 devboard protocol](psxdevboardprotocol.md)).
+words (see [DTL-H2000 devboard protocol](../../dtl/psxdevboardprotocol.md)).
 
 #### 1F802002h - DTL-H2000: EXP2:  - ATCONS DATA (R and W)
 ```

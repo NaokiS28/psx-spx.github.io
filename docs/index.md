@@ -22,33 +22,46 @@ An important detail to know about this current document, as well as the original
 
 To discuss the contents of this document, or hang out with likely minded people on development, hacking, and reverse engineering of Sony's first console, feel free to [join the PSX.Dev Discord Server](https://discord.gg/QByKPpH).
 
-[Memory Map](memorymap.md)<br/>
-[I/O Map](iomap.md)<br/>
-[Graphics Processing Unit (GPU)](graphicsprocessingunitgpu.md)<br/>
-[Geometry Transformation Engine (GTE)](geometrytransformationenginegte.md)<br/>
-[Macroblock Decoder (MDEC)](macroblockdecodermdec.md)<br/>
-[Sound Processing Unit (SPU)](soundprocessingunitspu.md)<br/>
-[Interrupts](interrupts.md)<br/>
-[DMA Channels](dmachannels.md)<br/>
-[Timers](timers.md)<br/>
-[CDROM Drive](cdromdrive.md)<br/>
-[CDROM Format](cdromformat.md)<br/>
-[CDROM File Formats](cdromfileformats.md)<br/>
-[Controllers and Memory Cards](controllersandmemorycards.md)<br/>
-[Pocketstation](pocketstation.md)<br/>
-[Serial Interfaces (SIO)](serialinterfacessio.md)<br/>
-[Expansion Port (PIO)](expansionportpio.md)<br/>
-[Memory Control](memorycontrol.md)<br/>
-[Unpredictable Things](unpredictablethings.md)<br/>
-[CPU Specifications](cpuspecifications.md)<br/>
-[Kernel (BIOS)](kernelbios.md)<br/>
-[Arcade Cabinets](arcadecabinets.md)<br/>
-[Konami System 573](konamisystem573.md)<br/>
-[Cheat Devices](cheatdevices.md)<br/>
-[PSX Dev-Board Chipsets](psxdevboardchipsets.md)<br/>
-[PSX Dev-Board Protocol](psxdevboardprotocol.md)<br/>
-[Hardware Numbers](hardwarenumbers.md)<br/>
-[Pinouts](pinouts.md)<br/>
 [About &amp; Credits](aboutcredits.md)<br/>
-[CDROM Video CDs (VCD)](cdromvideocdsvcd.md)<br/>
-[CDROM Internal Info on PSX CDROM Controller](cdrominternalinfoonpsxcdromcontroller.md)<br/>
+
+### PlayStation 1:
+[Memory Map](ps1/memorymap.md)<br/>
+[I/O Map](ps1/iomap.md)<br/>
+[Kernel (BIOS)](ps1/kernelbios.md)<br/>
+[Hardware Numbers](ps1/hardwarenumbers.md)<br/>
+[Pinouts](ps1/pinouts.md)<br/>
+#### CPU:
+[CPU Specifications](ps1/cpu/cpuspecifications.md)<br/>
+[Interrupts](ps1/cpu/interrupts.md)<br/>
+[DMA Channels](ps1/cpu/dmachannels.md)<br/>
+[Timers](ps1/cpu/timers.md)<br/>
+[Memory Control](ps1/cpu/memorycontrol.md)<br/>
+[Unpredictable Things](ps1/cpu/unpredictablethings.md)<br/>
+##### GTE:
+[Geometry Transformation Engine (GTE)](ps1/cpu/gte/geometrytransformationenginegte.md)<br/>
+##### MDEC:
+[Macroblock Decoder (MDEC)](ps1/cpu/mdec/macroblockdecodermdec.md)<br/>
+#### GPU:
+[Graphics Processing Unit (GPU)](ps1/gpu/graphicsprocessingunitgpu.md)<br/>
+#### SPU:
+[Sound Processing Unit (SPU)](ps1/spu/soundprocessingunitspu.md)<br/>
+#### SIO:
+[Serial Interfaces (SIO)](ps1/sio/serialinterfacessio.md)<br/>
+[Controllers and Memory Cards](ps1/sio/controllersandmemorycards.md)<br/>
+[Pocketstation](ps1/sio/pocketstation.md)<br/>
+#### PIO:
+[Expansion Port (PIO)](ps1/pio/expansionportpio.md)<br/>
+[Cheat Devices](ps1/pio/cheatdevices.md)<br/>
+#### CD-ROM:
+[CDROM Drive](ps1/cdr/cdromdrive.md)<br/>
+[CDROM Format](ps1/cdr/cdromformat.md)<br/>
+[CDROM File Formats](ps1/cdr/cdromfileformats.md)<br/>
+[CDROM Video CDs (VCD)](ps1/cdr/cdromvideocdsvcd.md)<br/>
+[CDROM Internal Info on PSX CDROM Controller](ps1/cdr/cdrominternalinfoonpsxcdromcontroller.md)<br/>
+### Sony DTL-Hxxx Devlopment Boards:
+[PSX Dev-Board Chipsets](dtl/psxdevboardchipsets.md)<br/>
+[PSX Dev-Board Protocol](dtl/psxdevboardprotocol.md)<br/>
+### Arcade Boards:
+[Arcade Cabinets](arcade/arcadecabinets.md)<br/>
+#### Konami:
+[Konami System 573](arcade/konami/573/konamisystem573.md)<br/>
