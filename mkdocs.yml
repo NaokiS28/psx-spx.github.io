@@ -52,7 +52,7 @@ markdown_extensions:
 nav:
   - 'index.md'
   - 'aboutcredits.md'
-  - Playsation 1:
+  - PlayStation 1:
       - 'ps1/kernelbios.md'
       - 'ps1/hardwarenumbers.md'
       - 'ps1/memorymap.md'
